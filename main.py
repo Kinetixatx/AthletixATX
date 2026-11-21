@@ -11,6 +11,11 @@ def index():
     return render_template("index.html")
 
 
+@bp.route("/body-composition/")
+def body_composition():
+    return render_template("body_composition.html")
+
+
 @bp.route("/contact", methods=["POST"])
 def contact():
     back = url_for("main.index") + "#contact"
