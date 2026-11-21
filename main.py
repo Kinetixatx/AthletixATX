@@ -55,6 +55,6 @@ def contact():
 
     return redirect(back)
     
-    @bp.route("/body-composition")
+@bp.route("/body-composition")
 def body_composition():
     return render_template("body_composition.html")
