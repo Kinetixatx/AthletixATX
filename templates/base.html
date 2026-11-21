@@ -42,6 +42,7 @@
       <a href="{{ url_for('main.index') }}#results">Results</a>
       <a href="{{ url_for('videos.index') }}" class="{% if request.endpoint and request.endpoint.startswith('videos.') %}current{% endif %}">Videos</a>
       <a href="{{ url_for('articles.index') }}" class="{% if request.endpoint and request.endpoint.startswith('articles.') %}current{% endif %}">Articles</a>
+      <a href="{{ url_for('main.body_composition') }}">Body Composition</a>
       <a href="{{ url_for('main.index') }}#contact">Contact</a>
 
       {% if current_user.is_authenticated %}
