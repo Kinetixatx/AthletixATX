@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Body Composition Resource Center | KINETIX Performance Coaching{% endblock %}
+{% block description %}Understand DEXA scans, visceral fat, lean mass, and bone health—and turn your body composition results into a practical plan.{% endblock %}
+{% block extra_head %}
+<style>
+.rc-hero{padding:150px 0 80px;background:linear-gradient(135deg,#18212c,#0b0f14)}
+.rc-hero h1{font-size:clamp(2.5rem,5.8vw,4.4rem);max-width:900px;margin:20px 0}
+.rc-lead{font-size:1.18rem;line-height:1.75;color:var(--text-soft);max-width:780px}
+.rc-section{padding:75px 0}.rc-section h2{margin:14px 0 22px}
+.rc-section p{font-size:1.08rem;line-height:1.8;color:var(--text-soft)}
+.rc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:34px}
+.rc-card{padding:28px;background:var(--bg-raised);border:1px solid var(--line)}
+.rc-card h3{color:var(--gold);margin-bottom:15px;line-height:1.25}
+.rc-card p{font-size:1rem}.rc-highlight{background:var(--bg-raised);border-left:4px solid var(--gold);padding:30px;margin-top:28px}
+.rc-highlight h3{margin-bottom:14px}.rc-action{margin-top:30px}
+@media(max-width:640px){.rc-hero{padding:120px 0 55px}.rc-section{padding:50px 0}.rc-card{padding:22px}}
+</style>
+{% endblock %}
+{% block content %}
+<section class="rc-hero"><div class="wrap">
+ <div class="eyebrow gold">KINETIX / EDUCATION</div>
+ <h1>Know what your body is made of. Build a plan that works.</h1>
+ <p class="rc-lead">The scale tells you how much you weigh. It doesn't tell you how much lean tissue you carry, where fat is stored, or how your bone health is changing. Learn what your measurements mean—and what to do next.</p>
+ <div class="rc-action"><a href="{{ url_for('main.index') }}#contact" class="btn btn-gold">Request an Assessment</a></div>
+</div></section>
+<section class="rc-section"><div class="wrap">
+ <div class="eyebrow">START HERE</div><h2>What is body composition?</h2>
+ <p>Body composition describes the proportions of fat, lean tissue, and bone in your body. Two people can weigh the same but have very different body composition. Following these measurements over time can reveal changes that a bathroom scale misses.</p>
+ <div class="rc-grid">
+  <article class="rc-card"><h3>DEXA Scans</h3><p>DEXA estimates total and regional body fat, lean soft tissue, and bone mineral content. Consistent scan conditions help make repeat comparisons more useful.</p></article>
+  <article class="rc-card"><h3>Visceral Fat</h3><p>Visceral fat sits deep in the abdomen around internal organs. Higher amounts are associated with greater cardiometabolic risk, even when body weight appears normal.</p></article>
+  <article class="rc-card"><h3>Lean Mass &amp; Strength</h3><p>Lean tissue supports physical function and performance. Resistance training and adequate nutrition help maintain and build muscle. DEXA lean mass is not identical to muscle mass.</p></article>
+  <article class="rc-card"><h3>Bone Health</h3><p>Bone density matters for long-term resilience. Your results should be interpreted in context with age, medical history, and appropriate clinical guidance.</p></article>
+ </div>
+</div></section>
+<section class="rc-section"><div class="wrap">
+ <div class="eyebrow gold">A CLOSER LOOK</div><h2>Visceral fat deserves special attention.</h2>
+ <p>Unlike the fat just beneath your skin, visceral fat collects inside the abdominal cavity. Excess visceral fat is linked with insulin resistance, type 2 diabetes, cardiovascular disease, and other metabolic health concerns. It is possible to have a normal body weight and still have elevated visceral fat.</p>
+ <div class="rc-highlight"><h3>Why it matters—and what you can do</h3><p>A visceral fat estimate is a risk indicator, not a diagnosis. Regular exercise, strength training, nutrition habits that support a healthy body composition, sufficient sleep, and appropriate medical follow-up can help improve overall metabolic health. Your individual results deserve context, not alarm.</p></div>
+</div></section>
+<section class="rc-section"><div class="wrap">
+ <div class="eyebrow">TURN DATA INTO ACTION</div><h2>Measure. Understand. Improve.</h2>
+ <div class="rc-grid">
+  <article class="rc-card"><h3>01 / Establish your baseline</h3><p>Review your scan alongside your training, eating habits, health history, and goals.</p></article>
+  <article class="rc-card"><h3>02 / Build a realistic plan</h3><p>Set priorities for strength training, protein, daily movement, and sustainable nutrition.</p></article>
+  <article class="rc-card"><h3>03 / Reassess meaningful progress</h3><p>Look beyond weight and evaluate trends in body fat, lean tissue, strength, and habits.</p></article>
+ </div>
+ <div class="rc-action"><a href="{{ url_for('main.index') }}#contact" class="btn btn-gold">Book Your KINETIX Assessment</a></div>
+</div></section>
+{% endblock %}
