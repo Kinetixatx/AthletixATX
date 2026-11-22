@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Understanding Your DEXA Scan | KINETIX Performance Coaching{% endblock %}
+{% block content %}
+<section class="page-header"><div class="wrap">
+<h1>Understanding Your DEXA Scan</h1>
+<p>Know what your body is made of. Build a plan that works.</p>
+</div></section>
+<section class="article-detail"><div class="wrap"><div class="body">
+<h2>What Is a DEXA Scan?</h2>
+<p>A DEXA scan estimates your body fat, lean tissue, and bone mineral. It reveals information a bathroom scale cannot.</p>
+<h2>Body Fat Percentage</h2>
+<p>Body fat percentage estimates the proportion of your weight that comes from fat. Interpret it alongside your strength, health history, and goals.</p>
+<h2>Lean Mass</h2>
+<p>Lean mass includes muscle and other non-fat, non-bone tissue. Resistance training and adequate nutrition help preserve muscle and strength.</p>
+<h2>Visceral Fat: Why It Matters</h2>
+<p>Visceral fat surrounds organs deep inside your abdomen. Elevated levels are associated with insulin resistance, type 2 diabetes, and cardiovascular disease—even at a normal body weight.</p>
+<p>A visceral fat estimate is a risk indicator, not a diagnosis. Exercise, nutrition, sleep, and appropriate medical care can help address your overall risk.</p>
+<h2>Bone Health</h2>
+<p>Bone mineral measurements provide useful context, but diagnosing osteoporosis requires appropriate clinical testing and interpretation.</p>
+<h2>Turn Your Results Into Action</h2>
+<p>KINETIX Performance Coaching helps you use body composition results to build a practical strength, nutrition, and longevity plan.</p>
+<p><a class="btn btn-gold" href="{{ url_for('main.index') }}#contact">Request a Body Composition Assessment</a></p>
+<p><a href="{{ url_for('main.body_composition') }}">Back to Resource Center</a></p>
+</div></div></section>
+{% endblock %}
