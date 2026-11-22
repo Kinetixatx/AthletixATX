@@ -15,6 +15,11 @@ def index():
 def body_composition():
     return render_template("body_composition.html")
 
+@bp.route("/body-composition/dexa-guide/")
+def dexa_guide():
+    return render_template("dexa_guide.html")
+
+
 
 @bp.route("/contact", methods=["POST"])
 def contact():
